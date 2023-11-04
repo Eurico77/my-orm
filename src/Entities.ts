@@ -1,4 +1,5 @@
-import { Entity } from "./main";
+import { Entity } from "./BaseEntity";
+
 
 export class Book extends Entity {
   title: string;

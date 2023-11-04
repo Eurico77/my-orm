@@ -1,21 +1,5 @@
-import { Book } from "./Entities";
-
-
-export class Entity {
-
-}
-
-
-export class ORM {
-
-  async save(entity: Entity) { }
-}
-
-
-
-
-
-
+import { Book } from './Entities';
+import { ORM } from './ORM';
 
 async function init() {
   const book = new Book('Clean code', 'Robert Martin');
