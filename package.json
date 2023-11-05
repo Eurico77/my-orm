@@ -5,7 +5,7 @@
   "license": "MIT",
   "dependencies": {
     "eslint": "^8.53.0",
-    "pgp": "^0.1.0",
+    "pg-promise": "^11.5.4",
     "typescript": "^5.2.2"
   },
   "scripts": {
