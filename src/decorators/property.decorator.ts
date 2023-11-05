@@ -1,4 +1,4 @@
-import { Entity } from '../BaseEntity';
+import { Entity } from '../entities/BaseEntity';
 
 export function column(config: { name: string }) {
   return (target: Entity, propertyKey: string) => {

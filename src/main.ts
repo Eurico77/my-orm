@@ -1,6 +1,6 @@
-import { Book } from './Entities';
-import { ORM } from './ORM';
-import { PostgresConnection } from './PostgresConnection';
+import { Book } from './entities/Book';
+import { ORM } from './infra/database/ORM';
+import { PostgresConnection } from './infra/database/PostgresConnection';
 
 async function init() {
   const connection = new PostgresConnection();

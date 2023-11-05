@@ -1,5 +1,5 @@
-import { Entity } from './BaseEntity';
-import { Connection } from './Connection';
+import { Entity } from '../../entities/BaseEntity';
+import { Connection } from './contract/Connection';
 
 export class ORM {
 
@@ -13,5 +13,10 @@ export class ORM {
     const statement = `
     insert into ${entity.schema}.${entity.table} (${columns}) values (${params})`;
     await this.connection.query(statement, [...values]);
+  }
+
+  async list(entity: Entity) {
+
+    console.log(entity);
   }
 }

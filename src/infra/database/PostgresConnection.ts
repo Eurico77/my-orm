@@ -1,5 +1,5 @@
 import pgp from 'pg-promise';
-import { Connection } from './Connection';
+import { Connection } from './contract/Connection';
 
 export class PostgresConnection implements Connection {
   pgp: any;
